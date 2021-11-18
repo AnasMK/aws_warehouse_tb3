@@ -1,12 +1,12 @@
 # AWS Warehouse TB3
 
-This a ROS package that has only a launch file to run aws-robomaker-small-warehouse-world with Turtlebot 3
+A ROS package that has only a launch file to run aws-robomaker-small-warehouse-world with Turtlebot 3
 
 ## Steps
 
 1. Install Turtlebot 3 packages following this [official tutorial](https://emanual.robotis.com/docs/en/platform/turtlebot3/quick-start/). Click on building `TurtleBot3 package from source` to install them as ROS packages in catkin_ws, instead of installing them as system packages.
 
-**NOTE:** Make sure of using the right branch based on ROS version
+**NOTE:** If you install packages using Github, make sure to select the right branch based on ROS version
 
 2. Clone [aws-robomaker-small-warehouse-world](https://github.com/aws-robotics/aws-robomaker-small-warehouse-world) 
 ```bash
