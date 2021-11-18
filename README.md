@@ -19,7 +19,7 @@ catkin build # or catkin_make
 3. Clone this repo
 ```
 cd ~/catkin_ws/src
-git clone <repo-link>
+git clone https://github.com/AnasMK/aws_warehouse_tb3.git
 cd ~/catkin_ws
 catkin build # or catkin_make 
 ```
