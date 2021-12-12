@@ -4,6 +4,21 @@ A ROS package that has only a launch file to run aws-robomaker-small-warehouse-w
 
 ## Steps
 
+You can use one the following methods shell script `scripts/setup.sh` or manually installing needed packages.
+
+### Shell Script Installation
+
+`scripts/setup.sh` will install needed packages for TB3 and AWS Small Warehouse.
+
+```bash
+cd ~/catkin_ws/src
+git clone https://github.com/AnasMK/aws_warehouse_tb3.git
+cd aws_warehouse_tb3/scripts
+./setup.sh
+```
+
+### Manual Installation
+
 1. Install Turtlebot 3 packages following this [official tutorial](https://emanual.robotis.com/docs/en/platform/turtlebot3/quick-start/). Click on building `TurtleBot3 package from source` to install them as ROS packages in catkin_ws, instead of installing them as system packages.
 
 **NOTE:** If you install packages using Github, make sure to select the right branch based on ROS version
