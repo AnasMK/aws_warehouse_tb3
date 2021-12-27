@@ -11,5 +11,5 @@
 
 
   <!-- include our robots -->
-  <include file="$(find aws_warehouse_multi_tb3)launch/robots.launch"/>
+  <include file="$(find aws_warehouse_tb3)launch/robots.launch"/>
 </launch>

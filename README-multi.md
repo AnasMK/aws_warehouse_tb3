@@ -258,17 +258,17 @@ you need to copy this file for each robot
   </node>
 
   <!-- AMCL -->
-  <include file="$(find aws_warehouse_multi_tb3)/launch/robot1_amcl.launch"/>
-  <include file="$(find aws_warehouse_multi_tb3)/launch/robot2_amcl.launch"/>
+  <include file="$(find aws_warehouse_tb3)/launch/robot1_amcl.launch"/>
+  <include file="$(find aws_warehouse_tb3)/launch/robot2_amcl.launch"/>
 
   <!-- Move Base -->
-  <include file="$(find aws_warehouse_multi_tb3)/launch/move_base_1.launch"/>
-  <include file="$(find aws_warehouse_multi_tb3)/launch/move_base_2.launch"/>
+  <include file="$(find aws_warehouse_tb3)/launch/move_base_1.launch"/>
+  <include file="$(find aws_warehouse_tb3)/launch/move_base_2.launch"/>
 
   <!-- rviz -->
   <group if="$(arg open_rviz)"> 
     <node pkg="rviz" type="rviz" name="rviz" required="true"
-          args="-d $(find aws_warehouse_multi_tb3)/rviz/multi_turtlebot3_navigation.rviz"/>
+          args="-d $(find aws_warehouse_tb3)/rviz/multi_turtlebot3_navigation.rviz"/>
   </group>
 </launch>
 

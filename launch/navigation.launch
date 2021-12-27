@@ -11,33 +11,33 @@
   </node>
 
   <!-- AMCL -->
-  <include file="$(find aws_warehouse_multi_tb3)/launch/robot1_amcl.launch">
+  <include file="$(find aws_warehouse_tb3)/launch/robot1_amcl.launch">
     <arg name="initial_pose_x" value="1.0" />
     <arg name="initial_pose_y" value="0.0" />
   </include>
-  <include file="$(find aws_warehouse_multi_tb3)/launch/robot2_amcl.launch">
+  <include file="$(find aws_warehouse_tb3)/launch/robot2_amcl.launch">
     <arg name="initial_pose_x" value="-1.0" />
     <arg name="initial_pose_y" value="0.0" />
   </include>
-  <!-- <include file="$(find aws_warehouse_multi_tb3)/launch/robot3_amcl.launch">
+  <!-- <include file="$(find aws_warehouse_tb3)/launch/robot3_amcl.launch">
     <arg name="initial_pose_x" value="1.0" />
     <arg name="initial_pose_y" value="-1.0" />
   </include>
-  <include file="$(find aws_warehouse_multi_tb3)/launch/robot4_amcl.launch">
+  <include file="$(find aws_warehouse_tb3)/launch/robot4_amcl.launch">
     <arg name="initial_pose_x" value="-1.0" />
     <arg name="initial_pose_y" value="-1.0" />
   </include> -->
   
 
   <!-- Move Base -->
-  <include file="$(find aws_warehouse_multi_tb3)/launch/move_base_1.launch"/>
-  <include file="$(find aws_warehouse_multi_tb3)/launch/move_base_2.launch"/>
-  <!-- <include file="$(find aws_warehouse_multi_tb3)/launch/move_base_3.launch"/>
-  <include file="$(find aws_warehouse_multi_tb3)/launch/move_base_4.launch"/> -->
+  <include file="$(find aws_warehouse_tb3)/launch/move_base_1.launch"/>
+  <include file="$(find aws_warehouse_tb3)/launch/move_base_2.launch"/>
+  <!-- <include file="$(find aws_warehouse_tb3)/launch/move_base_3.launch"/>
+  <include file="$(find aws_warehouse_tb3)/launch/move_base_4.launch"/> -->
 
   <!-- rviz -->
   <group if="$(arg open_rviz)"> 
     <node pkg="rviz" type="rviz" name="rviz" required="true"
-          args="-d $(find aws_warehouse_multi_tb3)/rviz/multi_turtlebot3_navigation_2.rviz"/>
+          args="-d $(find aws_warehouse_tb3)/rviz/multi_turtlebot3_navigation_2.rviz"/>
   </group>
 </launch>
